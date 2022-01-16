@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{12CC8766-0A0F-4146-98F9-6B7630584FFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{0140AA23-D2A9-44D0-8B54-B9BE80ADCFB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalRServer", "SignalRServer", "{6A60B490-5EBC-4DAC-B543-3CD86A8D5EBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client_server.signalR.Api", "src\services\signalR_server\client_server.signalR.Api\client_server.signalR.Api.csproj", "{4122DC7A-E5F2-4FEA-9742-AB04481C8A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client_server.signalR.Application", "src\services\signalR_server\client_server.signalR.Application\client_server.signalR.Application.csproj", "{2C336074-AC5F-4A2F-9502-BEE8BC7ED8B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client_server.signalR.Domain", "src\services\signalR_server\client_server.signalR.Domain\client_server.signalR.Domain.csproj", "{D8E7FEA2-0EA1-4758-8618-F222F39642EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client_server.signalR.IOC", "src\services\signalR_server\client_server.signalR.IOC\client_server.signalR.IOC.csproj", "{000F98A5-B030-4FC2-BA3B-73DAD85970DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client_server.signalR.Infra", "src\services\signalR_server\client_server.signalR.Infra\client_server.signalR.Infra.csproj", "{8F074ED9-6DED-4B0F-9F34-72F6AF1E6553}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4122DC7A-E5F2-4FEA-9742-AB04481C8A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4122DC7A-E5F2-4FEA-9742-AB04481C8A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4122DC7A-E5F2-4FEA-9742-AB04481C8A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4122DC7A-E5F2-4FEA-9742-AB04481C8A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C336074-AC5F-4A2F-9502-BEE8BC7ED8B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C336074-AC5F-4A2F-9502-BEE8BC7ED8B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C336074-AC5F-4A2F-9502-BEE8BC7ED8B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C336074-AC5F-4A2F-9502-BEE8BC7ED8B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8E7FEA2-0EA1-4758-8618-F222F39642EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E7FEA2-0EA1-4758-8618-F222F39642EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E7FEA2-0EA1-4758-8618-F222F39642EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E7FEA2-0EA1-4758-8618-F222F39642EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{000F98A5-B030-4FC2-BA3B-73DAD85970DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{000F98A5-B030-4FC2-BA3B-73DAD85970DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{000F98A5-B030-4FC2-BA3B-73DAD85970DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{000F98A5-B030-4FC2-BA3B-73DAD85970DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F074ED9-6DED-4B0F-9F34-72F6AF1E6553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F074ED9-6DED-4B0F-9F34-72F6AF1E6553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F074ED9-6DED-4B0F-9F34-72F6AF1E6553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F074ED9-6DED-4B0F-9F34-72F6AF1E6553}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A60B490-5EBC-4DAC-B543-3CD86A8D5EBB} = {0140AA23-D2A9-44D0-8B54-B9BE80ADCFB7}
+		{4122DC7A-E5F2-4FEA-9742-AB04481C8A54} = {6A60B490-5EBC-4DAC-B543-3CD86A8D5EBB}
+		{2C336074-AC5F-4A2F-9502-BEE8BC7ED8B4} = {6A60B490-5EBC-4DAC-B543-3CD86A8D5EBB}
+		{D8E7FEA2-0EA1-4758-8618-F222F39642EB} = {6A60B490-5EBC-4DAC-B543-3CD86A8D5EBB}
+		{000F98A5-B030-4FC2-BA3B-73DAD85970DF} = {6A60B490-5EBC-4DAC-B543-3CD86A8D5EBB}
+		{8F074ED9-6DED-4B0F-9F34-72F6AF1E6553} = {6A60B490-5EBC-4DAC-B543-3CD86A8D5EBB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3EB5B01-DE19-4F1B-8F7B-58FCBAE39BBB}
+	EndGlobalSection
+EndGlobal

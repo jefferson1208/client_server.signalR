@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
     this.hubConnection.on('Streaming', (data) => {
       var date = new Date;
       var time = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
-      this.message = `Data: ${data} Time: ${time}`;
+      this.messages.push(`Data: ${data} Time: ${time}`);
     });
 
     this.hubConnection.onclose(() => {
@@ -40,8 +40,8 @@ export class AppComponent implements OnInit {
   }
 
   title = 'SignalR - Client';
-  message = "Teste SignalR";
-
+  message = "";
+  messages = ['SignalR - Client'];
   public stopConnection() {
     this.hubConnection.stop().then(() => {
       console.log('stopped');

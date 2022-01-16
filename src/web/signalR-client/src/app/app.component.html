@@ -1,5 +1,20 @@
 <!-- <h1>{{message ? 'Teste SignalR' : message}}</h1> -->
 
-<div *ngFor="let message of messages">
-    <div style="color: red;">{{message}}</div>
+<div>
+
+    <h1>SignalR Client</h1>
+
+    <div style="color: blue; font-weight: bold;">
+        <h2>Mensagens</h2>
+    </div>
+
+    <div style="border: solid; width: 500px;position: relative;" *ngIf="messages.length > 0">
+        <div *ngFor="let message of messages">
+            <div style="color: red;">{{message}}</div>
+        </div>
+    </div>
+
+    <div style="margin-top: 20px; ">
+        <button class="button" (click)="clearMessages()">Limpar Mensagens</button>
+    </div>
 </div>
